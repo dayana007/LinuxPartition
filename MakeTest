@@ -1,0 +1,63 @@
+# Usage of Make1 make file
+# Console entries
+# make -f <Make File name>       - Executes the make file
+# make -f <Make File name> clean - Performs clean up for a rebuild and relink
+
+
+testsuit:
+	gcc -pthread -Wall src/testsuit_T0.c src/utility.c -o out/testsuit_T0
+	gcc -pthread -Wall src/testsuit_T1.c src/utility.c -o out/testsuit_T1
+	gcc -pthread -Wall src/testsuit_T2.c src/utility.c -o out/testsuit_T2
+	gcc -pthread -Wall src/testsuit_T3.c src/utility.c -o out/testsuit_T3
+	gcc -pthread -Wall src/testsuit_T4.c src/utility.c -o out/testsuit_T4
+	gcc -pthread -Wall src/testsuit_T5.c src/utility.c -o out/testsuit_T5
+	gcc -pthread -Wall src/testsuit_T6.c src/utility.c -o out/testsuit_T6
+	gcc -pthread -Wall src/testsuit_T7.c src/utility.c -o out/testsuit_T7
+	gcc -pthread -Wall src/testsuit_T8.c src/utility.c -o out/testsuit_T8
+	gcc -pthread -Wall src/testsuit_T9.c src/utility.c -o out/testsuit_T9
+
+clean:
+	rm -f out/testsuit_T0
+	rm -f out/testsuit_T1
+	rm -f out/testsuit_T2
+	rm -f out/testsuit_T3
+	rm -f out/testsuit_T4
+	rm -f out/testsuit_T5
+	rm -f out/testsuit_T6
+	rm -f out/testsuit_T7
+	rm -f out/testsuit_T8
+	rm -f out/testsuit_T9
+	rm -f *.o out/*.o
+	rm -f testsuit
+	rm -f TESTID*.pdf
+	rm -f TESTID*.txt
+	rm -f result.pdf
+
+run_T0:
+	./out/testsuit_T0
+run_T1:
+	./out/testsuit_T1
+run_T2:
+	./out/testsuit_T2
+run_T3:
+	./out/testsuit_T3
+run_T4:
+	./out/testsuit_T4
+run_T5:
+	./out/testsuit_T5
+run_T6:
+	./out/testsuit_T6
+run_T7:
+	./out/testsuit_T7
+run_T8:
+	./out/testsuit_T8
+run_T9:
+	./out/testsuit_T9
+
+report:
+	python tool.py 0
+	python tool.py 1
+	python tool.py 2
+	python tool.py 3
+	python tool.py 4
+	gnome-open result.pdf

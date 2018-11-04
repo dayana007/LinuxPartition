@@ -1,1 +1,47 @@
-Development for Linux Partition Test cases for the ARAMIS project
+# Linux_Partition
+make -f MakeTest clean 
+
+	Will remove all the generated binaries, out files and report pdfs and texts
+
+make -f MakeTest
+
+	Will compile all the test suits. Needs installation of the PThread library which is used
+	to create threads.
+
+make -f MakeTest run_T0
+
+	Will run the Test suit 0, which performs direct value assignment to array elements
+	5 Threads assign direct value to a 20 MB array and the test runs for 5 seconds.
+	The minimum duration and maximum duration in nanoseconds for each thread is 
+	captured in a 1MB sized array.
+
+make -f MakeTest run_T1
+
+	Will run the Test suit 1
+
+make -f MakeTest run_T2
+
+	Will run the Test suit 2
+
+make -f MakeTest run_T3
+
+	Will run the Test suit 3
+
+make -f MakeTest run_T4
+
+	Will run the Test suit 4, which performs recursive calls for fixed exit condition, using post recursion
+	schedule point task wait. The recursive calls are made for 5 threads and the test case is run for 5 seconds
+
+make -f MakeTest run_T5
+
+	Will run the Test suit 5, which performs recursive calls for fixed exit condition, using pre recursion
+	schedule point task wait. The recursive calls are made for 5 threads and the test case is run for 5 seconds
+
+make -f MakeTest run_T6
+
+	Will run the Test suit 6, which performs recursive calls for variable exit condition, therefore variable
+	dynamic stack consumption
+
+make -f MakeTest report
+
+	Will generate a report for test case execution. Will probably need installation of PDF related Python packages
