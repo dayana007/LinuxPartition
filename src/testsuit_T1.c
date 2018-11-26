@@ -17,85 +17,125 @@ extern int sched_getcpu(void);
 pthread_t pthrd_ID[TEST_THREADS];
 sem_t mutex_T1;
 
-char cArrTD0[SIZE_10MB];
+char cArrTD0[SIZE_10MB] 		 = {0};
 uint64_t u64ResTD0[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD0     = 0;
+char cStartTD0 							 = 'A';
+uint8_t u8ErrorStatusTD0     = FAILURE;
 
-char cArrTD1[SIZE_10MB];
+char cArrTD1[SIZE_10MB] 		 = {0};
 uint64_t u64ResTD1[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD1     = 0;
+char cStartTD1 							 = 'A';
+uint8_t u8ErrorStatusTD1     = FAILURE;
 
-char cArrTD2[SIZE_10MB];
+char cArrTD2[SIZE_10MB] 		 = {0};
 uint64_t u64ResTD2[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD2     = 0;
+char cStartTD2 							 = 'A';
+uint8_t u8ErrorStatusTD2     = FAILURE;
 
-char cArrTD3[SIZE_10MB];
+char cArrTD3[SIZE_10MB] 		 = {0};
 uint64_t u64ResTD3[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD3     = 0;
+char cStartTD3 							 = 'A';
+uint8_t u8ErrorStatusTD3     = FAILURE;
 
-char cArrTD4[SIZE_10MB];
+char cArrTD4[SIZE_10MB] 		 = {0};
 uint64_t u64ResTD4[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD4     = 0;
+char cStartTD4 							 = 'A';
+uint8_t u8ErrorStatusTD4     = FAILURE;
 
-char cArrTD5[SIZE_10MB];
+char cArrTD5[SIZE_10MB] 		 = {0};
 uint64_t u64ResTD5[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD5     = 0;
+char cStartTD5 							 = 'A';
+uint8_t u8ErrorStatusTD5     = FAILURE;
 
-char cArrTD6[SIZE_10MB];
+char cArrTD6[SIZE_10MB] 		 = {0};
 uint64_t u64ResTD6[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD6     = 0;
+char cStartTD6 							 = 'A';
+uint8_t u8ErrorStatusTD6     = FAILURE;
 
-char cArrTD7[SIZE_10MB];
+char cArrTD7[SIZE_10MB] 		 = {0};
 uint64_t u64ResTD7[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD7     = 0;
+char cStartTD7 							 = 'A';
+uint8_t u8ErrorStatusTD7     = FAILURE;
 
-char cArrTD8[SIZE_10MB];
+char cArrTD8[SIZE_10MB] 		 = {0};
 uint64_t u64ResTD8[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD8     = 0;
+char cStartTD8 							 = 'A';
+uint8_t u8ErrorStatusTD8     = FAILURE;
 
-char cArrTD9[SIZE_10MB];
+char cArrTD9[SIZE_10MB] 		 = {0};
 uint64_t u64ResTD9[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD9     = 0;
+char cStartTD9 							 = 'A';
+uint8_t u8ErrorStatusTD9     = FAILURE;
 
-char cArrTD10[SIZE_10MB];
+char cArrTD10[SIZE_10MB] 		  = {0};
 uint64_t u64ResTD10[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD10     = 0;
+char cStartTD10 							= 'A';
+uint8_t u8ErrorStatusTD10     = FAILURE;
 
-char cArrTD11[SIZE_10MB];
+char cArrTD11[SIZE_10MB] 		  = {0};
 uint64_t u64ResTD11[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD11     = 0;
+char cStartTD11 							= 'A';
+uint8_t u8ErrorStatusTD11     = FAILURE;
 
-char cArrTD12[SIZE_10MB];
+char cArrTD12[SIZE_10MB] 		  = {0};
 uint64_t u64ResTD12[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD12     = 0;
+char cStartTD12 							= 'A';
+uint8_t u8ErrorStatusTD12     = FAILURE;
 
-char cArrTD13[SIZE_10MB];
+char cArrTD13[SIZE_10MB] 		  = {0};
 uint64_t u64ResTD13[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD13     = 0;
+char cStartTD13 							= 'A';
+uint8_t u8ErrorStatusTD13     = FAILURE;
 
-char cArrTD14[SIZE_10MB];
+char cArrTD14[SIZE_10MB] 		  = {0};
 uint64_t u64ResTD14[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD14     = 0;
+char cStartTD14 							= 'A';
+uint8_t u8ErrorStatusTD14     = FAILURE;
 
-char cArrTD15[SIZE_10MB];
+char cArrTD15[SIZE_10MB] 		  = {0};
 uint64_t u64ResTD15[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD15     = 0;
+char cStartTD15 							= 'A';
+uint8_t u8ErrorStatusTD15     = FAILURE;
 
-char cArrTD16[SIZE_10MB];
+char cArrTD16[SIZE_10MB] 		  = {0};
 uint64_t u64ResTD16[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD16     = 0;
+char cStartTD16 							= 'A';
+uint8_t u8ErrorStatusTD16     = FAILURE;
 
-char cArrTD17[SIZE_10MB];
+char cArrTD17[SIZE_10MB] 		  = {0};
 uint64_t u64ResTD17[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD17     = 0;
+char cStartTD17 							= 'A';
+uint8_t u8ErrorStatusTD17     = FAILURE;
 
-char cArrTD18[SIZE_10MB];
+char cArrTD18[SIZE_10MB] 		  = {0};
 uint64_t u64ResTD18[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD18     = 0;
+char cStartTD18 							= 'A';
+uint8_t u8ErrorStatusTD18     = FAILURE;
 
-char cArrTD19[SIZE_10MB];
+char cArrTD19[SIZE_10MB] 		  = {0};
 uint64_t u64ResTD19[SIZE_1MB] = {0};
 uint64_t u64TimeIndexTD19     = 0;
+char cStartTD19 						 	= 'A';
+uint8_t u8ErrorStatusTD19     = FAILURE;
 
 char cArrTemp[SIZE_10MB];
 
@@ -125,9 +165,14 @@ void* TD0( void* argt )
 				 u64TimeInSecs = 0.0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD0[u64Index] = u64Index % 0xff;
+								 cArrTD0[u64Index] = cStartTD0;
+								 cStartTD0 = cStartTD0 + 1;
+								 if( 'Z' == cStartTD0 )
+								 {
+								 		cStartTD0 = 'A';
+								 }
 				 }
 
 				 while(1)
@@ -202,9 +247,14 @@ void* TD1( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD1[u64Index] = u64Index % 0xff;
+								 cArrTD1[u64Index] = cStartTD1;
+								 cStartTD1 = cStartTD1 + 1;
+								 if( 'Z' == cStartTD1 )
+								 {
+										cStartTD1 = 'A';
+								 }
 				 }
 
 				 while(1)
@@ -280,9 +330,14 @@ void* TD2( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD2[u64Index] = u64Index % 0xff;
+								 cArrTD2[u64Index] = cStartTD2;
+								 cStartTD2 = cStartTD2 + 1;
+								 if( 'Z' == cStartTD2 )
+								 {
+										cStartTD2 = 'A';
+								 }
 				 }
 
 				 while(1)
@@ -357,9 +412,14 @@ void* TD3( void* argt )
 				 		u64TimeInSecs = 0;
 
 						/* Prepare source buffer */
-	 				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+	 				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 	 				 {
-	 								 cArrTD3[u64Index] = u64Index % 0xff;
+	 								 cArrTD3[u64Index] = cStartTD3;
+									 cStartTD3 = cStartTD3 + 1;
+									 if( 'Z' == cStartTD3 )
+									 {
+											cStartTD3 = 'A';
+									 }
 	 				 }
 
 						while(1)
@@ -435,9 +495,14 @@ void* TD4( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				{
-								cArrTD4[u64Index] = u64Index % 0xff;
+								cArrTD4[u64Index] = cStartTD4;
+								cStartTD4 = cStartTD4 + 1;
+								if( 'Z' == cStartTD4 )
+								{
+									 cStartTD4 = 'A';
+								}
 				}
 
 				while(1)
@@ -513,9 +578,14 @@ void* TD5( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				{
-								cArrTD5[u64Index] = u64Index % 0xff;
+								cArrTD5[u64Index] = cStartTD5;
+								cStartTD5 = cStartTD5 + 1;
+								if( 'Z' == cStartTD5 )
+								{
+									 cStartTD5 = 'A';
+								}
 				}
 
 				while(1)
@@ -590,9 +660,14 @@ void* TD6( void* argt )
 				 u64TimeInSecs = 0.0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD6[u64Index] = u64Index % 0xff;
+								cArrTD6[u64Index] = cStartTD6;
+ 								cStartTD6 = cStartTD6 + 1;
+ 								if( 'Z' == cStartTD6 )
+ 								{
+ 									 cStartTD6 = 'A';
+ 								}
 				 }
 
 				 while(1)
@@ -666,9 +741,14 @@ void* TD7( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD7[u64Index] = u64Index % 0xff;
+								  cArrTD7[u64Index] = cStartTD7;
+  								cStartTD7 = cStartTD7 + 1;
+  								if( 'Z' == cStartTD7 )
+  								{
+  									 cStartTD7 = 'A';
+  								}
 				 }
 
 				 while(1)
@@ -744,9 +824,14 @@ void* TD8( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD8[u64Index] = u64Index % 0xff;
+								 cArrTD8[u64Index] = cStartTD8;
+								 cStartTD8 = cStartTD8 + 1;
+								 if( 'Z' == cStartTD8 )
+								 {
+										cStartTD8 = 'A';
+								 }
 				 }
 
 				 while(1)
@@ -822,9 +907,14 @@ void* TD9( void* argt )
 				 		u64TimeInSecs = 0;
 
 						/* Prepare source buffer */
-	 				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+	 				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 	 				 {
-	 								 cArrTD9[u64Index] = u64Index % 0xff;
+	 								 cArrTD9[u64Index] = cStartTD9;
+									 cStartTD9 = cStartTD9 + 1;
+									 if( 'Z' == cStartTD9 )
+									 {
+											cStartTD9 = 'A';
+									 }
 	 				 }
 
 						while(1)
@@ -899,9 +989,14 @@ void* TD10( void* argt )
 				 u64TimeInSecs = 0.0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD10[u64Index] = u64Index % 0xff;
+								 cArrTD10[u64Index] = cStartTD10;
+								 cStartTD10 = cStartTD10 + 1;
+								 if( 'Z' == cStartTD10 )
+								 {
+										cStartTD10 = 'A';
+								 }
 				 }
 
 				 while(1)
@@ -975,9 +1070,14 @@ void* TD11( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD11[u64Index] = u64Index % 0xff;
+								 cArrTD11[u64Index] = cStartTD11;
+								 cStartTD11 = cStartTD11 + 1;
+								 if( 'Z' == cStartTD11 )
+								 {
+										cStartTD11 = 'A';
+								 }
 				 }
 
 				 while(1)
@@ -1053,9 +1153,14 @@ void* TD12( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD12[u64Index] = u64Index % 0xff;
+								 cArrTD12[u64Index] = cStartTD12;
+								 cStartTD12 = cStartTD12 + 1;
+								 if( 'Z' == cStartTD12 )
+								 {
+										cStartTD12 = 'A';
+								 }
 				 }
 
 				 while(1)
@@ -1131,9 +1236,14 @@ void* TD13( void* argt )
 				 		u64TimeInSecs = 0;
 
 						/* Prepare source buffer */
-	 				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+	 				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 	 				 {
-	 								 cArrTD13[u64Index] = u64Index % 0xff;
+	 								 cArrTD13[u64Index] = cStartTD13;
+									 cStartTD13 = cStartTD13 + 1;
+									 if( 'Z' == cStartTD13 )
+									 {
+											cStartTD13 = 'A';
+									 }
 	 				 }
 
 						while(1)
@@ -1209,9 +1319,14 @@ void* TD14( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				{
-								cArrTD14[u64Index] = u64Index % 0xff;
+								cArrTD14[u64Index] = cStartTD14;
+								cStartTD14 = cStartTD14 + 1;
+								if( 'Z' == cStartTD14 )
+								{
+									 cStartTD14 = 'A';
+								}
 				}
 
 				while(1)
@@ -1287,9 +1402,14 @@ void* TD15( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				{
-								cArrTD15[u64Index] = u64Index % 0xff;
+								cArrTD15[u64Index] = cStartTD15;
+								cStartTD15 = cStartTD15 + 1;
+								if( 'Z' == cStartTD15 )
+								{
+									 cStartTD15 = 'A';
+								}
 				}
 
 				while(1)
@@ -1364,9 +1484,14 @@ void* TD16( void* argt )
 				 u64TimeInSecs = 0.0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD16[u64Index] = u64Index % 0xff;
+								cArrTD16[u64Index] = cStartTD16;
+ 								cStartTD16 = cStartTD16 + 1;
+ 								if( 'Z' == cStartTD16 )
+ 								{
+ 									 cStartTD16 = 'A';
+ 								}
 				 }
 
 				 while(1)
@@ -1442,9 +1567,14 @@ void* TD17( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD17[u64Index] = u64Index % 0xff;
+								  cArrTD17[u64Index] = cStartTD17;
+  								cStartTD17 = cStartTD17 + 1;
+  								if( 'Z' == cStartTD17 )
+  								{
+  									 cStartTD17 = 'A';
+  								}
 				 }
 
 				 while(1)
@@ -1520,9 +1650,14 @@ void* TD18( void* argt )
 				 u64TimeInSecs = 0;
 
 				 /* Prepare source buffer */
-				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 				 {
-								 cArrTD18[u64Index] = u64Index % 0xff;
+								 cArrTD18[u64Index] = cStartTD18;
+								 cStartTD18 = cStartTD18 + 1;
+								 if( 'Z' == cStartTD18 )
+								 {
+										cStartTD18 = 'A';
+								 }
 				 }
 
 				 while(1)
@@ -1598,9 +1733,14 @@ void* TD19( void* argt )
 				 		u64TimeInSecs = 0;
 
 						/* Prepare source buffer */
-	 				 for(u64Index = -1; u64Index < SIZE_10MB; ++u64Index)
+	 				 for( u64Index = 0; u64Index < SIZE_10MB; u64Index++ )
 	 				 {
-	 								 cArrTD19[u64Index] = u64Index % 0xff;
+	 								 cArrTD19[u64Index] = cStartTD19;
+									 cStartTD19 = cStartTD19 + 1;
+									 if( 'Z' == cStartTD19 )
+									 {
+											cStartTD19 = 'A';
+									 }
 	 				 }
 
 						while(1)
@@ -1699,7 +1839,7 @@ int main( int argc, char** argv )
 	while( 1 )
 	{
 		    sleep( 1 );
-				printf( "TD0(%lu)TD1(%lu)TD2(%lu)TD3(%lu)TD4(%lu)TD5(%lu)TD6(%lu)TD7(%lu)TD8(%lu)TD9(%lu)TD10(%lu)TD11(%lu)TD12(%lu)TD13(%lu)TD14(%lu)TD15(%lu)TD16(%lu)TD17(%lu)TD18(%lu)TD19(%lu)\n",
+				printf( "TD0(%lld)TD1(%lld)TD2(%lld)TD3(%lld)TD4(%lld)TD5(%lld)TD6(%lld)TD7(%lld)TD8(%lld)TD9(%lld)TD10(%lld)TD11(%lld)TD12(%lld)TD13(%lld)TD14(%lld)TD15(%lld)TD16(%lld)TD17(%lld)TD18(%lld)TD19(%lld)\n",
 				         u64TimeIndexTD0,
 								 u64TimeIndexTD1,
 								 u64TimeIndexTD2,
@@ -1785,68 +1925,68 @@ int main( int argc, char** argv )
 	}
 	/* Trigger via IPC to trigger application loop stop in secure partition in Pike OS */
 
-	printf( "Thread 0 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 0 execution time min = %lld max = %lld from %lld repeats\n",
         min( u64ResTD0, u64TimeIndexTD0 ), max( u64ResTD0, u64TimeIndexTD0 ), u64TimeIndexTD0 );
-	printf( "Thread 1 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 1 execution time min = %lld max = %lld from %lld repeats\n",
         min( u64ResTD1, u64TimeIndexTD1 ), max( u64ResTD1, u64TimeIndexTD1 ), u64TimeIndexTD1 );
-	printf( "Thread 2 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 2 execution time min = %lld max = %lld from %lld repeats\n",
         min( u64ResTD2, u64TimeIndexTD2 ), max( u64ResTD2, u64TimeIndexTD2 ), u64TimeIndexTD2 );
-	printf( "Thread 3 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 3 execution time min = %lld max = %lld from %lld repeats\n",
         min( u64ResTD3, u64TimeIndexTD3 ), max( u64ResTD3, u64TimeIndexTD3 ), u64TimeIndexTD3 );
-	printf( "Thread 4 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 4 execution time min = %lld max = %lld from %lld repeats\n",
         min( u64ResTD4, u64TimeIndexTD4 ), max( u64ResTD4, u64TimeIndexTD4 ), u64TimeIndexTD4 );
-	printf( "Thread 5 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 5 execution time min = %lld max = %lld from %lld repeats\n",
 				min( u64ResTD5, u64TimeIndexTD5 ), max( u64ResTD5, u64TimeIndexTD5 ), u64TimeIndexTD5 );
-	printf( "Thread 6 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 6 execution time min = %lld max = %lld from %lld repeats\n",
 				min( u64ResTD6, u64TimeIndexTD6 ), max( u64ResTD6, u64TimeIndexTD6 ), u64TimeIndexTD6 );
-	printf( "Thread 7 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 7 execution time min = %lld max = %lld from %lld repeats\n",
 				min( u64ResTD7, u64TimeIndexTD7 ), max( u64ResTD7, u64TimeIndexTD7 ), u64TimeIndexTD7 );
-	printf( "Thread 8 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 8 execution time min = %lld max = %lld from %lld repeats\n",
 				min( u64ResTD8, u64TimeIndexTD8 ), max( u64ResTD8, u64TimeIndexTD8 ), u64TimeIndexTD8 );
-	printf( "Thread 9 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 9 execution time min = %lld max = %lld from %lld repeats\n",
 				min( u64ResTD9, u64TimeIndexTD9 ), max( u64ResTD9, u64TimeIndexTD9 ), u64TimeIndexTD9 );
-	printf( "Thread 10 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 10 execution time min = %lld max = %lld from %lld repeats\n",
 			  min( u64ResTD10, u64TimeIndexTD10 ), max( u64ResTD10, u64TimeIndexTD10 ), u64TimeIndexTD10 );
-  printf( "Thread 11 execution time min = %lu max = %lu from %lu repeats\n",
+  printf( "Thread 11 execution time min = %lld max = %lld from %lld repeats\n",
 			  min( u64ResTD11, u64TimeIndexTD11 ), max( u64ResTD11, u64TimeIndexTD11 ), u64TimeIndexTD11 );
-  printf( "Thread 12 execution time min = %lu max = %lu from %lu repeats\n",
+  printf( "Thread 12 execution time min = %lld max = %lld from %lld repeats\n",
 			  min( u64ResTD12, u64TimeIndexTD12 ), max( u64ResTD12, u64TimeIndexTD12 ), u64TimeIndexTD12 );
-	printf( "Thread 13 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 13 execution time min = %lld max = %lld from %lld repeats\n",
 			  min( u64ResTD13, u64TimeIndexTD13 ), max( u64ResTD13, u64TimeIndexTD13 ), u64TimeIndexTD13 );
-	printf( "Thread 14 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 14 execution time min = %lld max = %lld from %lld repeats\n",
 			  min( u64ResTD14, u64TimeIndexTD14 ), max( u64ResTD14, u64TimeIndexTD14 ), u64TimeIndexTD14 );
-  printf( "Thread 15 execution time min = %lu max = %lu from %lu repeats\n",
+  printf( "Thread 15 execution time min = %lld max = %lld from %lld repeats\n",
 				min( u64ResTD15, u64TimeIndexTD15 ), max( u64ResTD15, u64TimeIndexTD15 ), u64TimeIndexTD15 );
-	printf( "Thread 16 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 16 execution time min = %lld max = %lld from %lld repeats\n",
 				min( u64ResTD16, u64TimeIndexTD16 ), max( u64ResTD16, u64TimeIndexTD16 ), u64TimeIndexTD16 );
-	printf( "Thread 17 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 17 execution time min = %lld max = %lld from %lld repeats\n",
 				min( u64ResTD17, u64TimeIndexTD17 ), max( u64ResTD17, u64TimeIndexTD17 ), u64TimeIndexTD17 );
-	printf( "Thread 18 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 18 execution time min = %lld max = %lld from %lld repeats\n",
 				min( u64ResTD18, u64TimeIndexTD18 ), max( u64ResTD18, u64TimeIndexTD18 ), u64TimeIndexTD18 );
-	printf( "Thread 19 execution time min = %lu max = %lu from %lu repeats\n",
+	printf( "Thread 19 execution time min = %lld max = %lld from %lld repeats\n",
 				min( u64ResTD19, u64TimeIndexTD19 ), max( u64ResTD19, u64TimeIndexTD19 ), u64TimeIndexTD19 );
 
 	fp = fopen( "TESTID_1.txt", "w" );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD0, u64TimeIndexTD0 ), max( u64ResTD0, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD1, u64TimeIndexTD1 ), max( u64ResTD1, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD2, u64TimeIndexTD2 ), max( u64ResTD2, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD3, u64TimeIndexTD3 ), max( u64ResTD3, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD4, u64TimeIndexTD4 ), max( u64ResTD4, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD5, u64TimeIndexTD5 ), max( u64ResTD5, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD6, u64TimeIndexTD6 ), max( u64ResTD6, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD7, u64TimeIndexTD7 ), max( u64ResTD7, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD8, u64TimeIndexTD8 ), max( u64ResTD8, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD9, u64TimeIndexTD9 ), max( u64ResTD9, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD10, u64TimeIndexTD10 ), max( u64ResTD10, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD11, u64TimeIndexTD11 ), max( u64ResTD11, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD12, u64TimeIndexTD12 ), max( u64ResTD12, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD13, u64TimeIndexTD13 ), max( u64ResTD13, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD14, u64TimeIndexTD14 ), max( u64ResTD14, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD15, u64TimeIndexTD15 ), max( u64ResTD15, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD16, u64TimeIndexTD16 ), max( u64ResTD16, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD17, u64TimeIndexTD17 ), max( u64ResTD17, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD18, u64TimeIndexTD18 ), max( u64ResTD18, SIZE_OF_REPEATS ) );
-	fprintf( fp, "Min %lu Max %lu\n", min( u64ResTD19, u64TimeIndexTD19 ), max( u64ResTD19, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD0, u64TimeIndexTD0 ), max( u64ResTD0, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD1, u64TimeIndexTD1 ), max( u64ResTD1, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD2, u64TimeIndexTD2 ), max( u64ResTD2, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD3, u64TimeIndexTD3 ), max( u64ResTD3, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD4, u64TimeIndexTD4 ), max( u64ResTD4, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD5, u64TimeIndexTD5 ), max( u64ResTD5, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD6, u64TimeIndexTD6 ), max( u64ResTD6, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD7, u64TimeIndexTD7 ), max( u64ResTD7, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD8, u64TimeIndexTD8 ), max( u64ResTD8, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD9, u64TimeIndexTD9 ), max( u64ResTD9, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD10, u64TimeIndexTD10 ), max( u64ResTD10, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD11, u64TimeIndexTD11 ), max( u64ResTD11, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD12, u64TimeIndexTD12 ), max( u64ResTD12, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD13, u64TimeIndexTD13 ), max( u64ResTD13, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD14, u64TimeIndexTD14 ), max( u64ResTD14, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD15, u64TimeIndexTD15 ), max( u64ResTD15, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD16, u64TimeIndexTD16 ), max( u64ResTD16, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD17, u64TimeIndexTD17 ), max( u64ResTD17, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD18, u64TimeIndexTD18 ), max( u64ResTD18, SIZE_OF_REPEATS ) );
+	fprintf( fp, "Min %lld Max %lld\n", min( u64ResTD19, u64TimeIndexTD19 ), max( u64ResTD19, SIZE_OF_REPEATS ) );
 	fclose( fp );
 
 	return 0;

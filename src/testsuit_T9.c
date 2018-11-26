@@ -50,11 +50,22 @@ pthread_t pthrd_ID[TEST_THREADS_QOS];
 ThreadStatus stStatus     = {0};
 Fifo  stFifo[FIFO_COUNT]  = {0};
 
+char cArrayTD0[PAGE_SIZE] = {'\0'};
+char cArrayTD1[PAGE_SIZE] = {'\0'};
+char cArrayTD2[PAGE_SIZE] = {'\0'};
+char cArrayTD3[PAGE_SIZE] = {'\0'};
+char cArrayTD4[PAGE_SIZE] = {'\0'};
+char cArrayTD5[PAGE_SIZE] = {'\0'};
+char cArrayTD6[PAGE_SIZE] = {'\0'};
+char cArrayTD7[PAGE_SIZE] = {'\0'};
+
+
+
 void* TD0( void* argt )
 {
     /* Local Variables */
     int fd;
-    char cArrayTD0[PAGE_SIZE] = {'\0'};
+    /* char cArrayTD0[PAGE_SIZE] = {'\0'}; */
 
     /* Know in which CPU this thread is scheduled */
     int inCpu = sched_getcpu();
@@ -89,7 +100,7 @@ void* TD0( void* argt )
         {
             usleep(1);
         }
-        
+
         /* Open FIFO for read only */
         fd = open( stFifo[0].fifoName, O_RDONLY );
         if( 0 < fd )
@@ -131,7 +142,7 @@ void* TD1( void* argt )
     /* Local Variables */
     int iIndex = 0;
     int fd;
-    char cArrayTD1[PAGE_SIZE] = {'\0'};
+    /* char cArrayTD1[PAGE_SIZE] = {'\0'}; */
 
     /* Know in which CPU this thread is scheduled */
     int inCpu = sched_getcpu();
@@ -212,7 +223,7 @@ void* TD2( void* argt )
 {
   /* Local Variables */
   int fd;
-  char cArrayTD2[PAGE_SIZE] = {'\0'};
+  /* char cArrayTD2[PAGE_SIZE] = {'\0'}; */
 
   /* Know in which CPU this thread is scheduled */
   int inCpu = sched_getcpu();
@@ -258,7 +269,7 @@ void* TD3( void* argt )
   /* Local Variables */
   int iIndex = 0;
   int fd;
-  char cArrayTD3[PAGE_SIZE] = {'\0'};
+  /* char cArrayTD3[PAGE_SIZE] = {'\0'}; */
 
   /* Know in which CPU this thread is scheduled */
   int inCpu = sched_getcpu();
@@ -315,7 +326,7 @@ void* TD4( void* argt )
 {
   /* Local Variables */
   int fd;
-  char cArrayTD4[PAGE_SIZE] = {'\0'};
+  /* char cArrayTD4[PAGE_SIZE] = {'\0'}; */
 
   /* Know in which CPU this thread is scheduled */
   int inCpu = sched_getcpu();
@@ -361,7 +372,7 @@ void* TD5( void* argt )
   /* Local Variables */
   int iIndex = 0;
   int fd;
-  char cArrayTD5[PAGE_SIZE] = {'\0'};
+  /* char cArrayTD5[PAGE_SIZE] = {'\0'}; */
 
   /* Know in which CPU this thread is scheduled */
   int inCpu = sched_getcpu();
@@ -418,7 +429,7 @@ void* TD6( void* argt )
 {
   /* Local Variables */
   int fd;
-  char cArrayTD6[PAGE_SIZE] = {'\0'};
+  /* char cArrayTD6[PAGE_SIZE] = {'\0'}; */
 
   /* Know in which CPU this thread is scheduled */
   int inCpu = sched_getcpu();
@@ -464,7 +475,7 @@ void* TD7( void* argt )
   /* Local Variables */
   int iIndex = 0;
   int fd;
-  char cArrayTD7[PAGE_SIZE] = {'\0'};
+  /* char cArrayTD7[PAGE_SIZE] = {'\0'}; */
 
   /* Know in which CPU this thread is scheduled */
   int inCpu = sched_getcpu();

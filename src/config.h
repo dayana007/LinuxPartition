@@ -2,6 +2,8 @@
 #define __CONFIG__
 
 #define SUCCESS 0
+#define FAILURE 1
+#define NEUTRAL 2
 #define TEST_COUNT 3
 #define TEST_THREADS 20
 #define STACK_DEPTH 100000
@@ -19,5 +21,14 @@
 #define TOTAL_CORE 10
 #define TOTAL_PAGES 5
 #define PAGE_SIZE 0x1000
+
+#define KNRM  "\x1B[0m"
+#define KRED  "\x1B[31m"
+#define KGRN  "\x1B[32m"
+#define KYEL  "\x1B[33m"
+#define KBLU  "\x1B[34m"
+#define KMAG  "\x1B[35m"
+#define KCYN  "\x1B[36m"
+#define KWHT  "\x1B[37m"
 
 #endif

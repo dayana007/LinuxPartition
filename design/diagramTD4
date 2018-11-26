@@ -1,0 +1,45 @@
+
+@startuml
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor red
+skinparam titleBackgroundColor Aqua-CadetBlue
+title <b> <size:30> CACHE_TEST
+|#dee4e8|TD[n]|
+|#daf0fe|Main|
+
+|Main|
+start
+    if (CreateWorkerThreads()?) then (True)
+        split
+            if(Run(TD[n]?) then (Start All Threads)
+              |TD[n]|
+              start
+                :stackLowerLimit = getStackPointer();
+                :RecurseTDn( Par: DepthOfRecursion )
+                if ( u64Parameter > 0 ) Then ( True )
+                  u64Parameter--
+                  RecurseTDn
+                else ( False )
+                  stackLowerLimit = getStackPointer()
+                endif
+                getStackPointer();
+              stop
+            else( Continue Main Thread)
+              |Main|
+              repeat
+                :Is there any active worker thread?;
+              repeat while() is (yes)
+              ->No;
+              :Calculate stack consumption of each thread;
+              :Store the stack consumption into a file;
+              stop
+            endif
+        end split
+    else (False)
+    |Main|
+        :Trigger Error Trace\nfor failed Threads >
+    endif
+#Red:[ERROR];
+
+@enduml

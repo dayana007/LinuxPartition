@@ -1,0 +1,59 @@
+
+@startuml
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderThickness 2
+skinparam titleBorderColor red
+skinparam titleBackgroundColor Aqua-CadetBlue
+title <b> <size:30> CACHE_TEST
+|#dee4e8|TD[n]|
+|#daf0fe|Main|
+
+|Main|
+start
+    if (CreateWorkerThreads()?) then (True)
+        split
+            if(Run(TD[n]?) then (Start All Threads)
+              |TD[n]|
+              start
+                repeat
+                    :index = 0;
+                    :Set Start = GetCurrentTime();
+                    repeat
+                        :Set TempArray[index]   = Array[N][index][10MB];
+                        :Set TempArray[index+1] = Array[N][index+1][10MB];
+                        :Set TempArray[index+2] = Array[N][index+2][10MB];
+                        :Set TempArray[index+3] = Array[N][index+3][10MB];
+                        :Set TempArray[index+4] = Array[N][index+4][10MB];
+                        :Set TempArray[index+5] = Array[N][index+5][10MB];
+                        :Set TempArray[index+6] = Array[N][index+6][10MB];
+                        :Set TempArray[index+7] = Array[N][index+7][10MB];
+                        :index = index + 8;
+                    repeat while ( index < 10MB ) is (Yes)
+                    :Set End = GetCurrentTime();
+                if ( RepeatCount[N] < SIZEOFREPEAT ) Then ( True )
+                  :RepeatCount[N] = RepeatCount[N] + 1;
+                  :Set Exit[N] = 0;
+                else ( False )
+                  :ArrayTime[N] = End - Start;
+                  :Set Exit[N] = 1;
+                endif
+                repeat while (Is Exit[N] 0?) is (Yes)
+              stop
+            else( Continue Main Thread)
+              |Main|
+              repeat
+                :Is there any active worker thread?;
+              repeat while() is (yes)
+              ->No;
+              :Calculate Minimum of ArrayTime[N]\nCalculate Maximum of ArrayTime[N];
+              :Update Minimum of ArrayTime[N] to file\nUpdate Maximum of ArrayTime[N] to file;
+              stop
+            endif
+        end split
+    else (False)
+    |Main|
+        :Trigger Error Trace\nfor failed Threads >
+    endif
+#Red:[ERROR];
+
+@enduml
